@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Клуб английского языка Simple | Обучение";
+}
+
+<div class="inline-content-container">
+    <div class="inner-wrapper">
+        <div class="caption">
+            <h2>Индивидуальные занятия с взрослыми</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="description">
+            <p>
+                В процессе трудовой деятельности для многих людей становиться понятно, 
+                что для дальнейшего карьерного роста необходимо улучшать уровень владения языком...
+            </p>
+            <p>
+                @Html.ActionLink("Мне это интересно", "IndividualLessons", "Details", null, new { @class = "more-details-link" })
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="inline-content-container">
+    <div class="inner-wrapper">
+        <div class="caption">
+            <h2>Индивидуальные занятия со школьниками</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="description">
+            <p>
+                Хотите быть уверены в результатах ЕГЭ, ГИА. 
+                Или планируете отправить ребенка учиться иностранную школу?
+            </p>
+            <p>
+                @Html.ActionLink("Мне это интересно", "IndividualLessonsForChildren", "Details", null, new { @class = "more-details-link" })
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="inline-content-container">
+    <div class="inner-wrapper">
+        <div class="caption">
+            <h2>Skype</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="description">
+            <p>
+                Есть желание улучшить уровень английского языка?
+                Заниматься самостоятельно по каким-то причинам не получается (скучно, не находиться время и т.д.).
+            </p>
+            <p>
+                @Html.ActionLink("Мне это интересно", "SkypeLessons", "Details", null, new { @class = "more-details-link" })
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>

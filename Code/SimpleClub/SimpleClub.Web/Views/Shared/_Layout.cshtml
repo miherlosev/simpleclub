@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title </title>
+    <link rel="stylesheet" type="text/css" href="shared-styles.css">
+    @Styles.Render("~/bundles/shared-styles")
+</head>
+<body>
+    <div class="page">
+        <div class="header" style="margin-bottom:20px;">
+            <div>
+                <div class="pull-right bg-grey" style="width:163px;height:5px;"></div>
+                <div class="pull-right bg-green" style="width:163px;height:5px;"></div>
+                <div class="pull-right bg-red" style="width:163px;height:5px;"></div>
+                <div class="pull-right bg-grey" style="width:163px;height:5px;"></div>
+                <div class="pull-right bg-green" style="width:163px;height:5px;"></div>
+                <div class="pull-right bg-red" style="width:165px;height:5px;"></div>
+                <div class="clear"></div>
+            </div>
+            <div>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a href="~/">
+                                    <img class="padding-15" alt="Simple" src="~/Images/simple_logo.png">
+                                </a>
+                            </td>
+                            <td class="valign-middle">
+                                <h1 class="color-green">
+                                    <a href="~/" class="grey-link menu-link">Клуб английского языка</a>
+                                    @*@Html.ActionLink("Клуб английского языка", "Club", "Home", null, new { @class = "grey-link menu-link" })*@
+                                </h1>
+                            </td>
+                            <td class="valign-middle">
+                                <ul class="horizontal-list" style="margin-left: 80px;">
+                                    <li>
+                                        <h2>
+                                            @Html.ActionLink("Обучение", "Learning", "Home", null, new { @class = "grey-link menu-link" })
+                                        </h2>
+                                    </li>
+                                    <li>
+                                        <h2>
+                                            @Html.ActionLink("О нас", "About", "Home", null, new { @class = "grey-link menu-link" })
+                                        </h2>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="content font-18" style="margin-bottom:20px;">
+            @RenderBody()
+        </div>
+        <div class="footer padding-15">
+            <div class="pull-left margin-right-25">
+                @*<p class="font-18" style="padding-bottom:12px;">Адрес: г.Тула, ул. М. Горького 1б</p>*@
+                <p class="font-18" style="padding-bottom:12px;">Телефон: 8-920-744-74-19 (Маргарита)</p>
+                <p class="font-18" style="padding-bottom:12px;">Skype: margarita.loseva.86</p>
+                <p class="font-18" style="padding-bottom:12px;">Email: clubsimple@yandex.ru</p>
+            </div>
+            <div class="pull-left">
+                <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
+                <div id="vk_groups"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 0, width: "615", height: "80", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 78982176);
+                </script>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

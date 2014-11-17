@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Клуб английского языка Simple | О нас";
+}
+
+<div class="inline-content-container">
+    <div class="inner-wrapper">
+        <div class="caption">
+            <h2>Мы</h2>
+        </div>
+        <div class="separator"></div>
+        <div class="description">
+            <p>
+                Мы - это люди, которые хотят собираться вместе и заниматься английским языком.
+            </p>
+            <p>
+                Мы хотим, чтобы это было быстро, удобно и интересно.
+            </p>
+            <p>
+                Присоединяйтесь!!!
+            </p>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="reviews">
+    @Html.ReviewItem(new ReviewDetails {
+        UserDetails = "Ирина Лукина, 26 лет",
+        UserRecal = new string[] { "Я обожаю английский язык и общение с людьми. А общение на английском языке обожаю вдвойне. Именно поэтому клуб Simple - это МОЕ! Здесь нет учителей, здесь нет оценок и осуждающих взглядов. Спасибо Вам огромное!!!" },
+        UserPhotoUrl = "~/Images/peoples/Irina_Lukina_production.jpg",
+        SiteSection = SiteSectonType.Club
+    })
+    @Html.ReviewItem(new ReviewDetails {
+        UserDetails = "",
+        UserRecal = new string[] { "Отзыв" },
+        UserPhotoUrl = "~/Images/peoples/user-120.png",
+        SiteSection = SiteSectonType.IndividualLessons
+    })
+    @Html.ReviewItem(new ReviewDetails {
+        UserDetails = "Влада Николаева, 9 лет [писала мама Влады]",
+        UserRecal = new string[] { "Маргарита Александровна - отличный репетитор. Она очень быстро заинтересовала и нашла контакт с ребенком. У нее интересная и увлекательная методика изучения языка. От занятий с Маргаритой Александровной ребенок в полном восторге. Одним словом, мы очень довольны!" },
+        UserPhotoUrl = "~/Images/peoples/vlada_nikolaeva_production.jpg",
+        SiteSection = SiteSectonType.IndividualLessonsForChildren
+    })
+    @Html.ReviewItem(new ReviewDetails {
+        UserDetails = "",
+        UserRecal = new string[] { "Отзыв" },
+        UserPhotoUrl = "~/Images/peoples/woman-120.png",
+        SiteSection = SiteSectonType.SkypeLessons
+    })
+</div>
