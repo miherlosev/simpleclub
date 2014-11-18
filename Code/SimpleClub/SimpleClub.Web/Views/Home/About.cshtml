@@ -24,6 +24,9 @@
 </div>
 
 <div class="reviews">
+    <div class="padding-15">
+        <h1 class="color-grey2">Отзывы</h1>
+    </div>
     @Html.ReviewItem(new ReviewDetails {
         UserDetails = "Ирина Лукина, 26 лет",
         UserRecal = new string[] { "Я обожаю английский язык и общение с людьми. А общение на английском языке обожаю вдвойне. Именно поэтому клуб Simple - это МОЕ! Здесь нет учителей, здесь нет оценок и осуждающих взглядов. Спасибо Вам огромное!!!" },
@@ -32,20 +35,20 @@
     })
     @Html.ReviewItem(new ReviewDetails {
         UserDetails = "",
-        UserRecal = new string[] { "Отзыв" },
-        UserPhotoUrl = "~/Images/peoples/user-120.png",
+        UserRecal = new string[] { "Мне очень нравится учить английский язык, английский мне нужен в жизни и в работе. Занятия проходят увлекательно и плодотворно. Чувствуется опыт преподавания, материал преподносится интересно и доступно. Так же именно на английском написано множество моих любимых песен, хочется не только слушать музыку, но понимать их смысл." },
+        UserPhotoUrl = "~/Images/peoples/nefedov_dmitrii-120x120.jpg",
         SiteSection = SiteSectonType.IndividualLessons
     })
     @Html.ReviewItem(new ReviewDetails {
-        UserDetails = "Влада Николаева, 9 лет [писала мама Влады]",
+        UserDetails = "Влада Николаева, 10 лет [писала мама Влады]",
         UserRecal = new string[] { "Маргарита Александровна - отличный репетитор. Она очень быстро заинтересовала и нашла контакт с ребенком. У нее интересная и увлекательная методика изучения языка. От занятий с Маргаритой Александровной ребенок в полном восторге. Одним словом, мы очень довольны!" },
         UserPhotoUrl = "~/Images/peoples/vlada_nikolaeva_production.jpg",
         SiteSection = SiteSectonType.IndividualLessonsForChildren
     })
-    @Html.ReviewItem(new ReviewDetails {
+    @*@Html.ReviewItem(new ReviewDetails {
         UserDetails = "",
         UserRecal = new string[] { "Отзыв" },
         UserPhotoUrl = "~/Images/peoples/woman-120.png",
         SiteSection = SiteSectonType.SkypeLessons
-    })
+    })*@
 </div>

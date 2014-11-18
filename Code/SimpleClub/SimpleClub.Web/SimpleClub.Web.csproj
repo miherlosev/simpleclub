@@ -184,6 +184,8 @@
     <Content Include="Images\main-logo.png" />
     <Content Include="Images\peoples\Irina_Lukina.jpg" />
     <Content Include="Images\peoples\Irina_Lukina_production.jpg" />
+    <Content Include="Images\peoples\nefedov_dmitrii-120x120.jpg" />
+    <Content Include="Images\peoples\nefedov_dmitrii.jpg" />
     <Content Include="Images\peoples\user-120.png" />
     <Content Include="Images\peoples\vlada_nikolaeva.jpeg" />
     <Content Include="Images\peoples\vlada_nikolaeva_production.jpg" />
